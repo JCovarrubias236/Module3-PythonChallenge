@@ -5,7 +5,7 @@ import os
 import csv
 
 #Set path for file
-csvpath = r'C:\Users\joshu\Documents\bootcamp_activities\NU-VIRT-DATA-PT-12-2023-U-LOLC\python-challenge\Starter_Code\PyBank\Resources\budget_data.csv'
+csvpath = os.path.join("python-challenge","Starter_Code","PyBank","Resources","budget_data.csv")
 #print(csvpath)
 
 with open(csvpath) as csvfile:
