@@ -55,9 +55,11 @@ print(f'Greatest Decrease in Profits: {csv_reader[min_index][0]} (${min(changes)
 output_path = os.path.join("python-challenge","Starter_Code","PyBank","analysis", "output.txt")
 
 with open(output_path, "w") as out_file:
-     print(f'Total Months: {row_count}')
-     print(f'Total: ${total}')
-     print(f'Average Change: ${average}')
-     print(f'Greatest Increase in Profits: {csv_reader[max_index][0]} (${max(changes)})')
-     print(f'Greatest Decrease in Profits: {csv_reader[min_index][0]} (${min(changes)})')
+     print(f'Financial Analysis', file=out_file)
+     print(f'---------------------------', file=out_file)
+     print(f'Total Months: {row_count}', file=out_file)
+     print(f'Total: ${total}', file=out_file)
+     print(f'Average Change: ${average}', file=out_file)
+     print(f'Greatest Increase in Profits: {csv_reader[max_index][0]} (${max(changes)})', file=out_file)
+     print(f'Greatest Decrease in Profits: {csv_reader[min_index][0]} (${min(changes)})', file=out_file)
 
