@@ -6,7 +6,6 @@ import csv
 
 #Set path for file
 csvpath = os.path.join("python-challenge","Starter_Code","PyBank","Resources","budget_data.csv")
-#print(csvpath)
 
 with open(csvpath) as csvfile:
     csv_reader = csv.reader(csvfile, delimiter=",")
